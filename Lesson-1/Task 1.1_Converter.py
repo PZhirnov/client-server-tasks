@@ -9,7 +9,7 @@ def get_info_data(data):
         print(f'Тип: {type(i)} Значение: {i}')
 
 
-# Исходные данные
+# ---- Исходные данные и проверка
 data_str = ['разработка', 'сокет', 'декоратор']
 
 # конвертер https://calcsbox.com/post/konverter-teksta-v-unikod.html
