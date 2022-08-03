@@ -40,12 +40,12 @@ def host_range_ping(num_pings: int = 2):
     while True:
         try:
             range_ping = int(input('Сколько адресов проверить? :'))
-            if 1 <= range_ping <= 256:
+            if 1 <= range_ping <= 255:
                 break
             else:
                 raise ValueError
         except ValueError:
-            print('Необходимо ввести число от 1 до 256!')
+            print('Необходимо ввести число от 1 до 255!')
 
     def worker_thread(ip_host):
         ip = ip_address(ip_host)
